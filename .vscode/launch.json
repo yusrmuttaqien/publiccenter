@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ui/main.app.App",
+            "projectName": "publiccenter_a9b88829",
+            "vmArgs": "--module-path=module",
+        }
+    ]
+}

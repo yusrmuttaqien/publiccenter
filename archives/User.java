@@ -18,6 +18,7 @@ public class User {
     private ArrayList<String> email = new ArrayList<String>();
     private ArrayList<String> password = new ArrayList<String>();
     private ArrayList<PermohonanLayananPublik> bookedData = new ArrayList<>();
+
     // Konstruktor
     public User() {
         this.idUser.add(0);
@@ -34,21 +35,20 @@ public class User {
         this.nama.add("Nana Anggraini");
         this.email.add("nana@gmail.com");
         this.password.add("123458");
-        
+
         this.bookedData = new ArrayList<>();
     }
 
     // Method get
-    
-    public int getJmlUser(){//method
- return this.nama.size();
- }//mendapatkan jumlah masyarakat sesuai nama masyarakat  
- 
-      
+
+    public int getJmlUser() {// method
+        return this.nama.size();
+    }// mendapatkan jumlah masyarakat sesuai nama masyarakat
+
     public int getId(int idUser) {
         return this.idUser.get(idUser);
     }
- 
+
     public String getNama(int idUser) {
         return this.nama.get(idUser);
     }
@@ -60,13 +60,12 @@ public class User {
     public String getPassword(int idUser) {
         return this.password.get(idUser);
     }
-    
-   
-   public ArrayList<PermohonanLayananPublik> getBookedData() {
-    return this.bookedData;
-}
 
-public void addBookedData(PermohonanLayananPublik permohonan) {
+    public ArrayList<PermohonanLayananPublik> getBookedData() {
+        return this.bookedData;
+    }
+
+    public void addBookedData(PermohonanLayananPublik permohonan) {
         // Membuat objek baru untuk menyimpan data yang benar-benar baru
         PermohonanLayananPublik newPermohonan = new PermohonanLayananPublik();
         newPermohonan.setnamaUserLogin(permohonan.getNamaUserLogin());
@@ -80,12 +79,11 @@ public void addBookedData(PermohonanLayananPublik permohonan) {
         this.bookedData.add(newPermohonan);
     }
 
-
     // Method set
     public void setId(int idUser) {
         this.idUser.add(idUser);
     }
-    
+
     public void setNama(String nama) {
         this.nama.add(nama);
     }
@@ -98,6 +96,3 @@ public void addBookedData(PermohonanLayananPublik permohonan) {
         this.password.add(password);
     }
 }
-
-    
-

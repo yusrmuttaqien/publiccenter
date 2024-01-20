@@ -1,0 +1,10 @@
+{
+    "java.project.outputPath": "bin",
+    "java.project.sourcePaths": [
+        "src/dbase",
+        "src/func",
+        "src/main",
+        "src/ui"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
