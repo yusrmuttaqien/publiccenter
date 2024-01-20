@@ -16,6 +16,10 @@ public class App {
       System.out.println("\nTelah terjadi Exception " + e + " pada aplikasi.");
       System.out.println("\nMe-reboot aplikasi...");
       main(args);
+    } catch (Exception e) {
+      System.out.println("\nTelah terjadi Exception " + e + " pada aplikasi.");
+      System.out.println("\nMe-reboot aplikasi...");
+      main(args);
     }
   }
 }
