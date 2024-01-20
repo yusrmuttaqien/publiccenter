@@ -11,7 +11,7 @@
 
 ## Cara men-compile program
 
-- Pastikan JDK terinstall di sistem
+- Pastikan JDK terinstall di sistem dan clone repository
 
 - Compile semua module sebelum men-compile main program (compile dari modul dari level terendah dalam tingkat depedensi, dependensi harus ter-compile terlebih dahulu sebelum men-compile modul yang me-require modul lainnya)
 
@@ -31,6 +31,20 @@ javac --module-path modules -d modules/<nama main program> src/<direktori file j
 
 ```zsh
 java --module-path modules -m <direktori main program dalam folder modules, direktori setelah folder root dinotasikan dengan dot (.) (ex: main/main.app.App)>
+```
+
+## Notes
+
+- Repo ini memiliki pre-compiled modules pada direktori `modules`
+
+- Di-compile oleh OpenJDK 21.0.1 pada sistem operasi macOS Sonoma 14.2.1
+
+- Untuk menggunakan pre-compiled binary, pasikan repo terclone dan terminal terbuka pada direktori root projek
+
+- Pastikan Java terinstall dan jalankan perintah berikut
+
+```zsh
+java --module-path modules -m main/main.app.App
 ```
 
 ## Credit
